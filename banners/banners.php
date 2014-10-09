@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* Banners - Aplicativo para lliure 4.10
+* Banners -  lliure > 4.10
 *
-* @Versão 2.0
+* @Versão 2.1
 * @Desenvolvedor Jeison Frasson <jomadee@lliure.com.br>
 * @Entre em contato com o desenvolvedor <jomadee@lliure.com.br> http://www.lliure.com.br/
 * @Licença http://opensource.org/licenses/gpl-license.php GNU Public License
@@ -54,7 +54,7 @@
 				
 				<td><a href="<?php echo $pluginHome."&amp;p=banners&amp;grupo=".$_GET['grupo']."&amp;id=".$dados['id']?>"><?php echo $dados['nome'];?></a></td>
 				
-				<td><a href="<?php echo $pluginHome."&amp;p=banners&amp;grupo=".$_GET['grupo']."&amp;del=".$dados['id'];?>" onclick="return confirmAlgo('Você quer mesmo excluir esse banner?')" ><img src="imagens/icones/preto/trash.png"></td>
+				<td><a href="<?php echo $pluginHome."&amp;p=banners&amp;grupo=".$_GET['grupo']."&amp;del=".$dados['id'];?>" onclick="return confirmAlgo('Você quer mesmo excluir esse banner?')" ><img src="<?php echo $_ll['tema']['icones'].'trash.png'?>"></td>
 				</tr>
 				<?php
 			}

@@ -2,5 +2,5 @@
 
 <configuracoes>
 	<nome>Banner</nome>
-	<seguranca>private</seguranca>	
+	<seguranca>public</seguranca>	
 </configuracoes>
