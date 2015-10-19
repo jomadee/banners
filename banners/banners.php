@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* Banners -  lliure > 4.10
+* Banners
 *
-* @Versão 2.1
+* @Versão 3.0
 * @Desenvolvedor Jeison Frasson <jomadee@lliure.com.br>
 * @Entre em contato com o desenvolvedor <jomadee@lliure.com.br> http://www.lliure.com.br/
 * @Licença http://opensource.org/licenses/gpl-license.php GNU Public License
@@ -48,13 +48,13 @@
 				<tr id="<?php echo "empr".$dados['id'];?>">
 				<td>
 					<a href="<?php echo $pluginHome."&amp;p=banners&amp;grupo=".$_GET['grupo']."&amp;id=".$dados['id']?>">
-					<img src="includes/thumb.php?i=../<?php echo $dir.$dados['imagem']; ?>:60:0:c" />
+					<img src="<?php echo $dir.'60-60-c/'.$dados['imagem']; ?>" />
 					</a>
 				</td>
 				
 				<td><a href="<?php echo $pluginHome."&amp;p=banners&amp;grupo=".$_GET['grupo']."&amp;id=".$dados['id']?>"><?php echo $dados['nome'];?></a></td>
 				
-				<td><a href="<?php echo $pluginHome."&amp;p=banners&amp;grupo=".$_GET['grupo']."&amp;del=".$dados['id'];?>" onclick="return confirmAlgo('Você quer mesmo excluir esse banner?')" ><img src="<?php echo $_ll['tema']['icones'].'trash.png'?>"></td>
+				<td><a href="<?php echo $pluginHome."&amp;p=banners&amp;grupo=".$_GET['grupo']."&amp;del=".$dados['id'];?>" onclick="return confirmAlgo('Você quer mesmo excluir esse banner?')" ><i class="fa fa-trash fa-lg"></i></td>
 				</tr>
 				<?php
 			}
@@ -130,9 +130,14 @@
 					$file->form();
 					?>
 				</div>	
+				<div></div>
 			</fieldset>
-			<span class="botao"><button type="submit">Gravar</button></span>
-			<span class="botao"><a href="<?php echo $backReal?>">Voltar</a></span>
+			
+			
+			<div class="botoes">
+				<button type="submit" class="confirm">Gravar</button>
+				<a href="<?php echo $backReal;?>">Voltar</a>
+			</div>
 		</form>
 		<?php
 		unset($dados);

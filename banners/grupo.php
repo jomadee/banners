@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* Banners -  lliure > 4.10
-*
-* @Versão 2.1
+* Banners
+
+* @Versão 3.0
 * @Desenvolvedor Jeison Frasson <jomadee@lliure.com.br>
 * @Entre em contato com o desenvolvedor <jomadee@lliure.com.br> http://www.lliure.com.br/
 * @Licença http://opensource.org/licenses/gpl-license.php GNU Public License
@@ -64,8 +64,10 @@
 			</div>
 		</fieldset>
 		
-		<span class="botao"><button type="submit">Gravar</button></span>
-		<span class="botao"><a href="<?php echo $backReal;?>">Voltar</a></span>
+		<div class="botoes">
+			<button type="submit" class="confirm">Gravar</button>
+			<a href="<?php echo $backReal;?>">Voltar</a>
+		</div>
 	</form>
 
 	<?php
